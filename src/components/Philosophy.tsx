@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Свежеобжаренный кофе",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Мы работаем только с зёрнами от проверенных фермеров. Каждая партия обжаривается вручную, чтобы вы чувствовали разницу в каждом глотке.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Тёплая атмосфера",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Наша кофейня — место, где время замедляется. Уютный интерьер, живая музыка по выходным и команда, которая знает ваш любимый напиток.",
   },
   {
-    title: "Естественная динамика",
+    title: "Забота о госте",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Каждый гость для нас особенный. Мы помним постоянных клиентов, предлагаем персональные рекомендации и создаём ритуал, к которому хочется возвращаться.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Больше, чем кофе",
+    description: "Свежая выпечка, авторские завтраки и сезонное меню. Мы обновляем карту, чтобы каждый визит был маленьким открытием.",
   },
 ]
 
@@ -51,28 +51,26 @@ export function Philosophy() {
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О нас</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Кофе с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>душой</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
+                alt="Интерьер кофейни"
                 className="opacity-90 relative z-10 w-auto"
               />
             </div>
           </div>
 
-          {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Мы открылись, чтобы доказать: хороший кофе меняет день. Каждое утро наша команда готовит напитки с заботой — для тех, кто ценит вкус и атмосферу.
             </p>
 
             {philosophyItems.map((item, index) => (
